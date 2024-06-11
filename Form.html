@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style/style.css" link>
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+</head>
+
+<body>
+    <div class="div1">
+        <ul class="gridlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="Form.html">Form</a></li>
+            <li><a href="FormAction.html">FormAction</a></li>
+            <li class="about"><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="content">   
+        <script type="text/javascript" src="script.js"></script>
+        <h2> Cadastro de Vagas Estágio PUCPR</h2>
+        <h3> Cadastre-se aqui e entraremos em contato na disponibização de vagas</h3>
+        <div class="cadastro-form">
+            <form method="get" action="FormAction.html">
+                <div class="form-group">
+                    <label for="name"><i class="fa fa-user" aria-hidden="true"></i></label>
+                    <input type="text" name="Nome" id="name" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                    <input type="email" name="Email" id="email" placeholder="Seu Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="celular"><i class="fa fa-phone" aria-hidden="true"></i></label>
+                    <input type="phone" name="celular" id="Celular" pattern="\(\d{2}\)\s\d{4,5}-\d{4}$"
+                        onkeydown="return mascaraTelefone(event)" placeholder="Seu celular" title="(xx)xxxxx-xxxx"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="birth"><i class="fa fa-birthday-cake" aria-hidden="true"></i></label>
+                    <input type="date" name="Nascimento" id="Data de Nascimento" title="Data de Nascimento">
+                </div>
+                <div class="form-group">
+                    <label for="agree-term" class="label-agree-term" aria-hidden="true"></label> <span>Eu concordo com os <a href="About.html">termos da empresa</a></span>
+                    <input type="checkbox" name="agree=term" id="agree-term" required>
+                </div>
+                <div> <input type=submit>
+                    <input type=reset value="Limpar Campos">
+                </div>
+
+
+
+            </form>
+
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
